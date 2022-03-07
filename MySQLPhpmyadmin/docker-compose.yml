@@ -10,11 +10,14 @@ services:
             MYSQL_USER: usuario
             MYSQL_PASSWORD: test
             MYSQL_ROOT_PASSWORD: test 
+        working_dir: /sql
         volumes:
             # Los archivos que están en el docker-entrypoint se ejecutan al iniciar el contenedor
             - ./conf:/etc/mysql/conf.d
             - ./data:/docker-entrypoint-initdb.d
-            - persistent:/var/lib/mysql
+            - persistente:/var/lib/mysql
+            # Todos los archivos del repositorio se pondrán en la carpeta app
+            - ./sql:/sql
         networks:
             - default
     phpmyadmin:
@@ -28,4 +31,4 @@ services:
             MYSQL_PASSWORD: test
             MYSQL_ROOT_PASSWORD: test 
 volumes:
-    persistent:
+    persistente:

@@ -1,0 +1,1 @@
+select Apellidos, Nombre, CorreoEmpresarial from Alumnos Limit 10;
