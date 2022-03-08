@@ -27,13 +27,13 @@ https://docs.microsoft.com/es-es/visualstudio/docker/tutorials/use-docker-compos
 
 ## :eyes: Guías :eyes:
 
- [GitHub. Git cheat sheet](https://github.com/BBDDDocker/Guias/github-git-cheat-sheet.pdf)
+ * [GitHub. Git cheat sheet](https://github.com/BBDDDocker/Guias/github-git-cheat-sheet.pdf)
 
 
- [Hoja de referencia para GitHub. Git](https://github.com/BBDDDocker/Guias/00_git-markdown-cheatsheet.pdf)
+ * [Hoja de referencia para GitHub. Git](https://github.com/BBDDDocker/Guias/00_git-markdown-cheatsheet.pdf)
 
-[Markdown](https://github.com/IESAlisal/BBDDDocker/blob/main/Guias/00_git-markdown-cheatsheet.pdf)
+* [Markdown](https://github.com/IESAlisal/BBDDDocker/blob/main/Guias/00_git-markdown-cheatsheet.pdf)
 
-[Branch-Pull Request-Merge-Deploy](https://github.com/IESAlisal/BBDDDocker/blob/main/Guias/github-flow-cheatsheet.pdf)
+* [Branch-Pull Request-Merge-Deploy](https://github.com/IESAlisal/BBDDDocker/blob/main/Guias/github-flow-cheatsheet.pdf)
 
-[Docker Cheat Sheet ](https://github.com/IESAlisal/BBDDDocker/blob/main/Guias/Docker_Cheat_Sheet-2.pdf)
+* [Docker Cheat Sheet ](https://github.com/IESAlisal/BBDDDocker/blob/main/Guias/Docker_Cheat_Sheet-2.pdf)
