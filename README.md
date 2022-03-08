@@ -1,7 +1,7 @@
-# BBDDDocker
+# :beginner: BBDDDocker :beginner:
 Base de datos con Docker
 
-## Programas necesarios
+## :bank: Programas necesarios :bank:
 
 [*] Git. https://git-scm.com/downloads  Control de versiones. (En Ubuntu ya viene instalado).
 
@@ -15,20 +15,25 @@ Base de datos con Docker
 
 
 
-## Instalar Extensiones
+## :pill: Instalar Extensiones :pill:
 
 [*] Docker
 
 [*] Mysql. publisher:"cweijan"
 
-## Docker. Tutorial para MySQL
+## :hammer: Docker. Tutorial para MySQL :hammer:
 
 https://docs.microsoft.com/es-es/visualstudio/docker/tutorials/use-docker-compose
 
-## Guías
+## :eyes: Guías :eyes:
 
- ![GitHub. Git cheat sheet] (/Guias/github-git-cheat-sheet.pdf)
+ [GitHub. Git cheat sheet](https://github.com/BBDDDocker/Guias/github-git-cheat-sheet.pdf)
 
 
- ![Hoja de referencia para GitHub. Git](https://github.com/BBDDDocker/Guias/00_git-markdown-cheatsheet.pdf)
+ [Hoja de referencia para GitHub. Git](https://github.com/BBDDDocker/Guias/00_git-markdown-cheatsheet.pdf)
 
+[Markdown](https://github.com/IESAlisal/BBDDDocker/blob/main/Guias/00_git-markdown-cheatsheet.pdf)
+
+[Branch-Pull Request-Merge-Deploy](https://github.com/IESAlisal/BBDDDocker/blob/main/Guias/github-flow-cheatsheet.pdf)
+
+[Docker Cheat Sheet ](https://github.com/IESAlisal/BBDDDocker/blob/main/Guias/Docker_Cheat_Sheet-2.pdf)
