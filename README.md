@@ -7,19 +7,19 @@ Base de datos con Docker
 
 - [x] GitHub.com https://github.com/ Almacen de repositorios en la nube.
 
-[x] Visual Studio Code. https://code.visualstudio.com/download. IDE. Editor de texto con múltiples extensiones para trabajar con lenguajes de programación y aplicaciones.
+- [x] Visual Studio Code. https://code.visualstudio.com/download. IDE. Editor de texto con múltiples extensiones para trabajar con lenguajes de programación y aplicaciones.
 
-[x] GitHub Desktop. https://desktop.github.com/ Gestor gráfico de actualización de versiones.
+- [x] GitHub Desktop. https://desktop.github.com/ Gestor gráfico de actualización de versiones.
 
-[x] GitHub Codespaces https://github.com/features/codespaces Editor de código en la nube
+- [x] GitHub Codespaces https://github.com/features/codespaces Editor de código en la nube
 
 
 
 ## :pill: Instalar Extensiones :pill:
 
-[x] Docker
+- [x] Docker
 
-[x] Mysql. publisher:"cweijan"
+- [x] Mysql. publisher:"cweijan"
 
 ## :hammer: Docker. Tutorial para MySQL :hammer:
 
