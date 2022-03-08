@@ -27,5 +27,8 @@ https://docs.microsoft.com/es-es/visualstudio/docker/tutorials/use-docker-compos
 
 ## Guías
 
- ![GitHub. Git cheat sheet] (Guias/github-git-cheat-sheet.pdf)
+ ![GitHub. Git cheat sheet] (/Guias/github-git-cheat-sheet.pdf)
+
+
+ ![Hoja de referencia para GitHub. Git](https://github.com/BBDDDocker/Guias/00_git-markdown-cheatsheet.pdf)
 
