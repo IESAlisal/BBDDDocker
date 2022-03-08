@@ -1,5 +1,5 @@
-# :beginner: BBDDDocker :beginner:
-Base de datos con Docker
+# :beginner: Mysql con Docker, docker-compose, git, github.com, github desktop y codespaces. :beginner:
+
 
 ## :bank: Programas necesarios :bank:
 
