@@ -1,4 +1,4 @@
-# :beginner: Mysql con Docker, docker-compose, git, github.com, github desktop y codespaces. :beginner:
+# :beginner: Mysql con Docker, git, github.com y codespaces. :beginner:
 
 
 ## :bank: Programas necesarios :bank:
