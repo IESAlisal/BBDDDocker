@@ -1,5 +1,15 @@
 version: "3.2"
 services:
+    www:
+        build: .
+        ports: 
+            - "80:80"
+        volumes:
+            - ./www:/var/www/html
+        links:
+            - db
+        networks:
+            - default   
     db:
         image: mysql:latest
         ports: 
