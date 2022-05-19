@@ -24,16 +24,16 @@ https://docs.microsoft.com/es-es/visualstudio/docker/tutorials/use-docker-compos
 
 ## :eyes: Guías
 
-*[GitHub. Git cheat sheet](https://github.com/BBDDDocker/Guias/github-git-cheat-sheet.pdf)
+- [x] [GitHub. Git cheat sheet](https://github.com/BBDDDocker/Guias/github-git-cheat-sheet.pdf)
 
-*[Hoja de referencia para GitHub. Git](https://github.com/BBDDDocker/Guias/00_git-markdown-cheatsheet.pdf)
+- [x] [Hoja de referencia para GitHub. Git](https://github.com/BBDDDocker/Guias/00_git-markdown-cheatsheet.pdf)
 
-*[Markdown](https://github.com/IESAlisal/BBDDDocker/blob/main/Guias/00_git-markdown-cheatsheet.pdf)
+- [x] [Markdown](https://github.com/IESAlisal/BBDDDocker/blob/main/Guias/00_git-markdown-cheatsheet.pdf)
 
-*[Branch-Pull Request-Merge-Deploy](https://github.com/IESAlisal/BBDDDocker/blob/main/Guias/github-flow-cheatsheet.pdf)
+- [x] [Branch-Pull Request-Merge-Deploy](https://github.com/IESAlisal/BBDDDocker/blob/main/Guias/github-flow-cheatsheet.pdf)
 
-*[Docker Cheat Sheet ](https://github.com/IESAlisal/BBDDDocker/blob/main/Guias/Docker_Cheat_Sheet-2.pdf)
+- [x] [Docker Cheat Sheet ](https://github.com/IESAlisal/BBDDDocker/blob/main/Guias/Docker_Cheat_Sheet-2.pdf)
 
-:sunrise: Servidor web con PHP para publicar páginas
+## :sunrise: Servidor web con PHP para publicar páginas
 
 Se publicarán páginas en un servidor web con PHP. Estás páginas están en la carpeta www
