@@ -1,7 +1,6 @@
-# :beginner: Mysql con Docker, git, github.com y codespaces. :beginner:
+# :beginner: Web y Mysql con Docker, git, github.com y codespaces
 
-
-## :bank: Programas necesarios :bank:
+## :bank: Programas necesarios
 
 - [x] Git. https://git-scm.com/downloads  Control de versiones. (En Ubuntu ya viene instalado).
 
@@ -13,27 +12,28 @@
 
 - [x] GitHub Codespaces https://github.com/features/codespaces Editor de código en la nube
 
-
-
-## :pill: Instalar Extensiones :pill:
+## :pill: Instalar Extensiones
 
 - [x] Docker
 
 - [x] Mysql. publisher:"cweijan"
 
-## :hammer: Docker. Tutorial para MySQL :hammer:
+## :hammer: Docker. Tutorial para MySQL
 
 https://docs.microsoft.com/es-es/visualstudio/docker/tutorials/use-docker-compose
 
-## :eyes: Guías :eyes:
+## :eyes: Guías
 
- * [GitHub. Git cheat sheet](https://github.com/BBDDDocker/Guias/github-git-cheat-sheet.pdf)
+*[GitHub. Git cheat sheet](https://github.com/BBDDDocker/Guias/github-git-cheat-sheet.pdf)
 
+*[Hoja de referencia para GitHub. Git](https://github.com/BBDDDocker/Guias/00_git-markdown-cheatsheet.pdf)
 
- * [Hoja de referencia para GitHub. Git](https://github.com/BBDDDocker/Guias/00_git-markdown-cheatsheet.pdf)
+*[Markdown](https://github.com/IESAlisal/BBDDDocker/blob/main/Guias/00_git-markdown-cheatsheet.pdf)
 
-* [Markdown](https://github.com/IESAlisal/BBDDDocker/blob/main/Guias/00_git-markdown-cheatsheet.pdf)
+*[Branch-Pull Request-Merge-Deploy](https://github.com/IESAlisal/BBDDDocker/blob/main/Guias/github-flow-cheatsheet.pdf)
 
-* [Branch-Pull Request-Merge-Deploy](https://github.com/IESAlisal/BBDDDocker/blob/main/Guias/github-flow-cheatsheet.pdf)
+*[Docker Cheat Sheet ](https://github.com/IESAlisal/BBDDDocker/blob/main/Guias/Docker_Cheat_Sheet-2.pdf)
 
-* [Docker Cheat Sheet ](https://github.com/IESAlisal/BBDDDocker/blob/main/Guias/Docker_Cheat_Sheet-2.pdf)
+:sunrise: Servidor web con PHP para publicar páginas
+
+Se publicarán páginas en un servidor web con PHP. Estás páginas están en la carpeta www
