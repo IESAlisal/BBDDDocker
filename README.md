@@ -36,4 +36,5 @@ https://docs.microsoft.com/es-es/visualstudio/docker/tutorials/use-docker-compos
 
 ## :sunrise: Servidor web con PHP para publicar páginas
 
-Se publicarán páginas en un servidor web con PHP. Estás páginas están en la carpeta www
+Se publicarán páginas en un servidor web con PHP. Estás páginas están en la carpeta www.
+Se creará un docker con php-apache en el que publicar las páginas web.
