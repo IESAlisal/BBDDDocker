@@ -10,16 +10,11 @@
 <body>
   <div class = "container">
     <div class="jumbotron">
-      <h1 class="display-4">Docker app.  <span class="badge bg-secondary">Clientes</span></h1>
-      <p class="lead">Ejemplo de aplicacion PHP y MySQL con contenedores</p>
-      <hr class="my-4">
-      <p>Usa un contenedor para Apache/PHP, otro para phpmyadmin y otro para MySQL con almacenamiento de aplicación y de datos en volúmenes externos</p>
-      <ul class="nav nav-tabs">
-                    <li class="nav-item"><a class="nav-link" href="index.php">Personas</a></li>
-                    <li class="nav-item"><a class="nav-link" href="alumnos.php">Alumnos</a></li>
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="clientes.php">Clientes</a></li>
-                    <li class="nav-item"><a class="nav-link" href="http://localhost:8000" target="_blanck">phpmyadmin</a></li>
-                </ul>      
+        <h1 class="display-4">Docker app.  <span class="badge bg-secondary">Clientes</span></h1>
+        <p class="lead">Ejemplo de aplicacion PHP y MySQL con contenedores</p>
+        <hr class="my-4">
+        <p>Usa un contenedor para Apache/PHP, otro para phpmyadmin y otro para MySQL con almacenamiento de aplicación y de datos en volúmenes externos</p>
+        <?php include 'menu.php';?>    
     </div>
     <table class="table table-striped table-responsive">
       <thead>
@@ -35,10 +30,9 @@
       </thead>
       <tbody>
         <?php
-            $conexion = new mysqli('db', 'usuario', 'test', 'Instituto');
+            $conexion = new mysqli($BBDDServidor, $BBDDUsuario, $BBDDPassword, $BBDD);
             $cadenaSQL = "SELECT * From Clientes";
             $resultado = $conexion->query($cadenaSQL);
-
             while ($fila = $resultado->fetch_object()) {
                 echo  " <tr><td> " .$fila->name . 
                       "</td><td>" . $fila->credit_rating .
@@ -49,6 +43,8 @@
                       "</td><td>" . $fila->zip_code .
                       "</td></tr>";
             }
+            $resultado->close();
+            mysqli_close($conexion);
         ?>
       </tbody>
     </table>

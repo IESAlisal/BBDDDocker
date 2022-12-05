@@ -13,33 +13,29 @@
                 <p class="lead">Ejemplo de aplicacion PHP y MySQL con contenedores</p>
                 <hr class="my-4">
                 <p>Usa un contenedor para Apache/PHP, otro para phpmyadmin y otro para MySQL con almacenamiento de aplicación y de datos en volúmenes externos</p>
-                <ul class="nav nav-tabs">
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.php">Personas</a></li>
-                    <li class="nav-item"><a class="nav-link" href="alumnos.php">Alumnos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="clientes.php">Clientes</a></li>
-                    <li class="nav-item"><a class="nav-link" href="http://localhost:8000" target="_blanck">phpmyadmin</a></li>
-                </ul>
+                <?php include 'menu.php';?>
             </div>
             <?php
-                $conn = mysqli_connect('db', 'usuario', 'test', "Instituto");
-                $query = 'SELECT * From Personas';
-                $result = mysqli_query($conn, $query);
+                $conexion = new mysqli($BBDDServidor, $BBDDUsuario, $BBDDPassword, $BBDD);
+
+                $cadenaSQL = 'SELECT * From Personas';
+                $resultado = mysqli_query($conexion, $cadenaSQL);
                 echo '<table class="table table-striped table-responsive">';
                 echo '<thead><tr><th></th><th>IdPersona</th><th>Nombre</th></tr></thead>';
-                while($value = $result->fetch_array(MYSQLI_ASSOC)){
+                while($fila = $resultado->fetch_array(MYSQLI_ASSOC)){
                     echo '<tr>';
                         echo '<td><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-briefcase-fill" viewBox="0 0 16 16">
                             <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v1.384l7.614 2.03a1.5 1.5 0 0 0 .772 0L16 5.884V4.5A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5z"/>
                             <path d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85v5.65z"/>
                             </svg></span></a></td>';
-                        foreach($value as $element){
-                            echo '<td>' . $element . '</td>';
+                        foreach($fila as $elemento){
+                            echo '<td>' . $elemento . '</td>';
                         }
                     echo '</tr>';
                 }
                 echo '</table>';
-                $result->close();
-                mysqli_close($conn);
+                $resultado->close();
+                mysqli_close($conexion);
             ?>
         </div>
     </body>

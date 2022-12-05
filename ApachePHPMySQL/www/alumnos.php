@@ -13,12 +13,7 @@
                 <p class="lead">Ejemplo de aplicacion PHP y MySQL con contenedores</p>
                 <hr class="my-4">
                 <p>Usa un contenedor para Apache/PHP, otro para phpmyadmin y otro para MySQL con almacenamiento de aplicación y de datos en volúmenes externos</p>
-                <ul class="nav nav-tabs">
-                    <li class="nav-item"><a class="nav-link" href="index.php">Personas</a></li>
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="alumnos.php">Alumnos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="clientes.php">Clientes</a></li>
-                    <li class="nav-item"><a class="nav-link" href="http://localhost:8000" target="_blanck">phpmyadmin</a></li>
-                </ul>
+                <?php include 'menu.php';?>
             </div>
             <table class="table table-striped table-responsive">
                 <thead>
@@ -46,23 +41,24 @@
                 </thead>
                 <tbody>                
                     <?php
-                        $conn = mysqli_connect('db', 'usuario', 'test', "Instituto");
-                        $query = 'SELECT * From Alumnos';
-                        $result = mysqli_query($conn, $query);
-                        while($value = $result->fetch_array(MYSQLI_ASSOC)){
+                        $conexion = new mysqli($BBDDServidor, $BBDDUsuario, $BBDDPassword, $BBDD);
+
+                        $cadenaSQL = 'SELECT * From Alumnos';
+                        $resultado = mysqli_query($conexion, $cadenaSQL);
+                        while($fila = $resultado->fetch_array(MYSQLI_ASSOC)){
                             echo '<tr>';
                                 echo '<td></span><a href="#">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                                         <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                                     </svg>
                                 </a></td>';
-                                foreach($value as $element){
-                                    echo '<td>' . $element . '</td>';
+                                foreach($fila as $elemento){
+                                    echo '<td>' . $elemento . '</td>';
                                 }
                             echo '</tr>';
                         }
-                        $result->close();
-                        mysqli_close($conn);
+                        $resultado->close();
+                        mysqli_close($conexion);
                     ?>
                 </tbody>    
             </table>';
